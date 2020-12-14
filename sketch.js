@@ -35,9 +35,6 @@ function draw() {
 	rectMode(CENTER);
 	background(0);
 
-	if (keyCode === UP_ARROW) {
-		keyPressed();
-	}
 
 	Engine.update(engine);
 	
@@ -54,5 +51,7 @@ function draw() {
 }
 
 function keyPressed() {
+	if (keyCode === UP_ARROW) {
 	Matter.Body.applyForce( ballBody, ballBody.position, {x:10, y:-10});
+	}
 }
