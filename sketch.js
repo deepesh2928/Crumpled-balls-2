@@ -54,5 +54,5 @@ function draw() {
 }
 
 function keyPressed() {
-	Matter.Body.applyForce( ballBody, ballBody.position, {x:1, y:-10});
+	Matter.Body.applyForce( ballBody, ballBody.position, {x:10, y:-10});
 }
