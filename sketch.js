@@ -35,9 +35,9 @@ function draw() {
 	rectMode(CENTER);
 	background(0);
 
-	// if (keyCode === UP_ARROW) {
-	// 	keyPressed();
-	// }
+	if (keyCode === UP_ARROW) {
+		keyPressed();
+	}
 
 	Engine.update(engine);
 	
